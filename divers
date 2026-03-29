@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Experiences</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="accueil" class="logo">
+            <span class="symbol"><img src="images/logo.svg" alt="" /></span
+            ><b class="title">accueil</b>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1>Experiences et projets techniques</h1>
+          <h3>Cyber sécurité</h3>
+          <p>
+            J'ai eu une introduction à la cyber sécurité a travers le projet de
+            42 appelé
+            <a
+              href="https://github.com/ma-gabriel/snow-crash"
+              style="color: blue"
+              >SnowCrash</a
+            >
+            (en plus evidemment de la securité des sites web)
+          </p>
+          <h3>algorithmie</h3>
+          <p>
+            J'ai reproduit en duo avec un camarade en C un systeme de jeu 3d en
+            raycasting
+            <a href="https://github.com/ma-gabriel/Cub" style="color: blue"
+              >similaire a wolfensetin3d (1992)</a
+            >
+            <span class="image main">
+              <img
+                style="width: 50%"
+                src="images/cub.png"
+                alt="image of the 3d game"
+              />
+            </span>
+          </p>
+          <h3>challenges</h3>
+          <p>
+            J'ai eu l'occasion de participer a quelques challenges comme
+            <a href="https://adventofcode.com/" style="color: blue"
+              >l'advent of code</a
+            >, principalement resolu en python
+            <a
+              href="https://github.com/ma-gabriel/advent-of-code"
+              style="color: blue"
+              >ici</a
+            >. J'ai pu également beaucoup participer aux clash of code et defis
+            saisonniers de
+            <a href="https://www.codingame.com" style="color: blue">codingame</a
+            >,
+            <a
+              href="https://www.codingame.com/profile/6a02a26ff964635db8c59b678a0ce1169656995"
+              style="color: blue"
+              >mon profil</a
+            >
+            afin de gagner en vitesse de raisonnement sur les problemes rapides
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

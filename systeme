@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Programmation système</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="accueil" class="logo">
+            <span class="symbol"><img src="images/logo.svg" alt="" /></span
+            ><b class="title">accueil</b>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1>Programmation système</h1>
+          <p>
+            La programmation système est un type de programmation qui vise au
+            développement de programmes qui font partie du système
+            d'exploitation d'un ordinateur ou qui en réalisent les fonctions.
+          </p>
+          <p>
+            Dans le cadre du cursus j'ai eu l'occasion de recréer en duo une
+            base de shell en C (<a
+              href="https://github.com/ma-gabriel/minishell"
+              style="color: blue"
+              >minishell</a
+            >), qui peut gérer des pipes, redirections, variable
+            d'environnement, plusieurs built in, signaux...
+          </p>
+          <span class="image main"
+            ><img
+              style="width: 50%"
+              src="images/minishell.png"
+              alt="image of minishell"
+          /></span>
+          <p>
+            Toujours dans le cadre du cursus mais cette fois optionnel et en C++
+            j'ai refait en duo un serveur HTTP (<a
+              href="https://github.com/ma-gabriel/HTTP-serveur"
+              style="color: blue"
+              >HTTP-serveur</a
+            >), c'est a dire entre autre: gestion de sockets, multiplexing I/O,
+            gestions des codes d'erreur, parsing HTTP, respect de la norme
+            RFC... Inspiré de nginx.
+          </p>
+          <span class="image main"
+            ><img
+              style="width: 50%"
+              src="images/HTTP-server.png"
+              alt="image of the http server"
+          /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

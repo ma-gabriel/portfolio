@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Programmation Web</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="accueil" class="logo">
+            <span class="symbol"><img src="images/logo.svg" alt="" /></span
+            ><b class="title">accueil</b>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1>Programmation Web</h1>
+          <p>
+            Durant le cursus ainsi que mes occupations personnelles j'ai eu
+            l'occasion de faire du web, donc frontend (js vanilla, vue,
+            tailwindcss) et backend (fastify, sqlite, postgresSQL), ainsi que
+            d'autres technologies (Docker, nginx, wordpress, imgproxy,
+            prisma...)
+          </p>
+          <p>
+            Mon principal projet web fait est
+            <a
+            href="https://github.com/ma-gabriel/ft_trancendence"
+              style="color: blue"
+              >ft_trancendence</a
+            >, un projet de groupe demandant de faire un pong en ligne avec chat
+            et systeme de comptes. Ce projet avait des contraintes tres
+            restrictives, comme par exemple faire du frontend avec comme seul
+            framework un outil de css, ainsi qu'etre un projet de découverte,
+            avoir une contrainte de temps, et qu'une équipe n'affectionnant pas
+            particulièrement le web
+          </p>
+          <span class="image main"><img style="width: 50%;" src="images/ft_transcendance.png" alt="image of ft_trancendance" /></span>
+          <p>
+            Ensuite j'ai commencé a faire un autre projet:
+            <a href="https://github.com/ma-gabriel/rooms" style="color: blue"
+              >rooms</a
+            >. Ce projet n'etant pas prioritaire et surtout travaillant seul
+            dessus, il n'est pas encore fini mais m'a déjà permit de décourvrir
+            des outils professionels tels que vue-js, prisma, vite, et bien
+            d'autres.
+          </p>
+          <span class="image main"><img style="width: 50%;" src="images/rooms.png" alt="image of rooms" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
