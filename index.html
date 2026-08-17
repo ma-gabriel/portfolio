@@ -1,118 +1,136 @@
 <!doctype html>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <div class="inner"></div>
-      </header>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
 
-      <!-- Main -->
-      <div id="main">
-        <div class="inner">
-          <header>
-            <p>
-              Bonjour<br />
-              Je suis Gabriel Eymat, étudiant en informatique
-              dans l'école
-              <a href="https://42lyon.fr/" style="color: blue"
-                >42 Lyon Auvergne Rhone Alpes</a
-              >.<br />
-              Pour plus d'informations sur moi, je laisse a disposition mon CV:
-              <a
-                style="color: blue"
-                href="./pdf/CV_GabrielEymat.pdf"
-                download="CV_GabrielEymat.pdf"
-                >(telechargez ici)</a
-              >, ou de mon <a
-              href="https://github.com/ma-gabriel"
-              style="color: blue"
-              >github personnel</a
-            >
-            </p>
-            <h1 style="font-size: 2em;">Mes projets</h1>
-            <p>
-              De par mes études et par ma passion pour le code, mes projets et
-              mes experiences sont variés<br />
-              La liste ci dessous est non exhaustive et des projets sont
-              constamment en cours, mais cela donne une idée de ce qui a été
-              fait dans les 2 dernieres années
-            </p>
-          </header>
-          <section class="tiles">
-            <article class="style2">
-              <span class="image">
-                <img src="images/pic02.jpg" alt="" />
-              </span>
-              <a href="systeme">
-                <h2>Programmation système</h2>
-                <div class="content">
-                  <p style="color: #fff">
-                    La programmation système est un type de programmation qui
-                    vise au développement de programmes qui font partie du
-                    système d'exploitation d'un ordinateur ou qui en réalisent
-                    les fonctions
-                  </p>
-                </div>
-              </a>
-            </article>
-            <article class="style3">
-              <span class="image">
-                <img src="images/pic03.jpg" alt="" />
-              </span>
-              <a href="web">
-                <h2>Programmation web</h2>
-                <div class="content">
-                  <p style="color: #fff">
-                    La programmation web est la programmation informatique qui
-                    permet de créer et d'éditer des sites web. Elle permet la
-                    création d'applications destinées à être déployées sur
-                    Internet ou en Intranet
-                  </p>
-                </div>
-              </a>
-            </article>
-            <article class="style1">
-              <span class="image">
-                <img src="images/pic01.jpg" alt="" />
-              </span>
-              <a href="divers">
-                <h2>Experiences diverses et projets techniques</h2>
-                <div class="content">
-                  <p style="color: #fff">
-                    Cybersécurité, algorithmie, challenges...
-                  </p>
-                </div>
-              </a>
-            </article>
-          </section>
+    <title>Portfolio — Gabriel Eymat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1>Gabriel Eymat</h1>
+
+        <h2>
+            Ce site n'est pas fini, le resultat final devrait arriver dans la journée. Toutes mes excuses
+        </h2>
+        <p>
+            Étudiant en informatique avec un CDI dans un secteur sans rapport,
+            je cherche à trouver un travail qui correspond réellement à mes études et compétences 
+        </p>
+    </section>
+
+
+    <!-- Project categories -->
+    <section id="projects">
+
+        <div class="categories" id="categories-selector">
+            <a onclick="categoriesSelection(0)">Tous</a>
+            <a onclick="categoriesSelection(1)">programmation web</a>
+            <a onclick="categoriesSelection(2)">programmation système</a>
+            <a onclick="categoriesSelection(3)">projets divers</a>
         </div>
-      </div>
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+
+        <!-- Projects -->
+        <div class="project-grid" id="projects-selector">
+
+            <a data-type="1" class="project">
+                <img src="portfolio/illustration.jpg">
+                <h2>Ce portfolio</h2>
+                <p>Ce site a été fait de 0 en 2h</p>
+            </a>
+            
+            <a data-type="2" class="project">
+                <img src="./webserv/illustration.png">
+                <h2>webserv</h2>
+                <p>Recréer un NGINX basique en C++.</p>
+            </a>
+
+            <a data-type="2" class="project">
+                <img src="./minishell/illustration.png">
+                <h2>minishell</h2>
+                <p>Refaire un shell en C</p>
+            </a>
+
+            <a data-type="1" class="project">
+                <img src="cartoondle/illustration.png">
+                <h2>Cartoondle ?</h2>
+                <p>Un site de jeu basé sur Wordle</p>
+            </a>
+
+            <a data-type="3" class="project">
+                <img src="cub/illustration.png">
+                <h2>Cub3d</h2>
+                <p>Un raycasting qui simule les premiers jeux 3D</p>
+            </a>
+
+            <a data-type="3" class="project">
+                <img src="advent/illustration.png">
+                <h2>Codingame / Advent of Code</h2>
+                <p>Résolution de problèmes (principalement en python)</p>
+            </a>
+
+            <a data-type="1" class="project">
+                <img src="rooms/illustration.png">
+                <h2>Rooms</h2>
+                <p>Un site (pas encore fini) qui m'a permis de decouvrir vue3 JS</p>
+            </a>
+
+            <a data-type="1" class="project">
+                <img src="transcendance/illustration.png">
+                <h2>transcendance</h2>
+                <p>Site internet en groupe avec peu de frameworks</p>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Vous pouvez me contacter par email ou par téléphone.
+        </p>
+
+        <div class="contact-info">
+            <a href="mailto:eymatgabriel@gmail.com">
+                eymatgabriel@gmail.com
+            </a>
+
+            <a href="tel:+33768143163">
+                +33 7 68 14 31 63
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 Gabriel Eymat</p>
+</footer>
+
+</body>
 </html>
