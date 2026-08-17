@@ -225,3 +225,50 @@ footer {
     }
 
 }
+
+/* =========================
+   Projets
+   ========================= */
+
+.project-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-page h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.project-intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.project-info {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+.project-page h2 {
+    margin-top: 45px;
+}
+
+.project-page > p {
+    max-width: 750px;
+}
