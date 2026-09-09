@@ -107,11 +107,13 @@ nav a:hover {
 .categories a:hover {
     background: #505050;
     color: #fff;
+    cursor: pointer;
 }
 
 .categories a.selected {
     background: #222;
     color: #fff;
+    cursor: default;
 }
 
 /* =========================
