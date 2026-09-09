@@ -38,7 +38,10 @@
         <p>
           Étudiant en informatique avec un CDI dans un secteur sans rapport, je
           cherche à trouver un travail qui correspond réellement à mes études et
-          compétences
+          compétences. <br />
+          Les projets présentés ne reflètent pas l'ensemble de mes expériences,
+          mais donnent un aperçu des principales compétences que j'ai
+          développées au travers de mes projets scolaires et personnels.
         </p>
         <p>
           <a class="cv-button" href="./CV.pdf" download="CV_GabrielEymat.pdf">
@@ -50,7 +53,7 @@
       <!-- Project categories -->
       <section id="projects">
         <div class="categories" id="categories-selector">
-          <a onclick="categoriesSelection(0)">Tous</a>
+          <a class="selected" onclick="categoriesSelection(0)">Tous</a>
           <a onclick="categoriesSelection(1)">réseau & infrastructure</a>
           <a onclick="categoriesSelection(2)">programmation web</a>
           <a onclick="categoriesSelection(3)">programmation système</a>
@@ -59,25 +62,27 @@
 
         <!-- Projects -->
         <div class="project-grid" id="projects-selector">
-          
           <a data-type="3" class="project" href="minishell/">
             <img src="./minishell/illustration.png" />
             <h2>minishell</h2>
             <p>Refaire un shell en C.</p>
           </a>
-          
+
           <a data-type="1" class="project" href="deploiment/">
             <img src="./deploiment/illustration.png" />
             <h2>déploiment</h2>
-            <p>Configuration d’un serveur distant et mise en ligne d’une application web</p>
+            <p>
+              Configuration d’un serveur distant et mise en ligne d’une
+              application web
+            </p>
           </a>
 
           <a data-type="2" class="project" href="portfolio/">
             <img src="portfolio/illustration.jpg" />
             <h2>Ce portfolio</h2>
-            <p>Ce site portfolio, réalisé en 5h.</p>
+            <p>Ce site portfolio, réalisé en 6h.</p>
           </a>
-          
+
           <a data-type="3" class="project" href="webserv/">
             <img src="./webserv/illustration.png" />
             <h2>webserv</h2>
@@ -117,7 +122,9 @@
           <a data-type="2" class="project" href="rooms/">
             <img src="rooms/illustration.png" />
             <h2>Rooms</h2>
-            <p>Un site (pas encore fini) qui m'a permis de decouvrir vue3 JS.</p>
+            <p>
+              Un site (pas encore fini) qui m'a permis de decouvrir vue3 JS.
+            </p>
           </a>
         </div>
       </section>

@@ -3,26 +3,29 @@
    ========================= */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #FFF;
-    background: #0d1117;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: #0d1117;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+a[target="_blank"] {
+  color: revert;
+}
 
 /* =========================
    Layout
@@ -31,89 +34,78 @@ a {
 header,
 main,
 footer {
-    width: min(1100px, 90%);
-    margin: 0 auto;
+  width: 100% - 48px;
+  margin: 24px;
 }
 
 header {
-    padding: 25px 0;
-}
-
-main {
-    padding: 60px 0;
+  padding: 25px 0;
 }
 
 section {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
-
 
 /* =========================
    Navigation
    ========================= */
 
 nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 32px;
 }
 
 nav a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* =========================
    Introduction
    ========================= */
 
-.intro {
-    max-width: 700px;
-}
-
 .intro h1 {
-    margin: 0 0 20px;
-    font-size: 3rem;
-    line-height: 1.1;
+  margin: 0 0 20px;
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 .intro p {
-    font-size: 1.1rem;
-    color: #aaa;
+  font-size: 1.1rem;
+  color: #aaa;
 }
-
 
 /* =========================
    Categories
    ========================= */
 
 .categories {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 .categories a {
-    padding: 10px 18px;
-    border: 1px solid #ccc;
-    border-radius: 24px;
-    background: #fff;
-    color: #000;
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  background: #fff;
+  color: #000;
 }
 
 .categories a:hover {
-    background: #505050;
-    color: #fff;
-    cursor: pointer;
+  background: #505050;
+  color: #fff;
+  cursor: pointer;
 }
 
 .categories a.selected {
-    background: #222;
-    color: #fff;
-    cursor: default;
+  background: #222;
+  color: #fff;
+  cursor: default;
 }
 
 /* =========================
@@ -121,83 +113,83 @@ nav a:hover {
    ========================= */
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
 .project[hidden] {
-    display: none;
+  display: none;
 }
 
 .project {
-    display: block;
-    overflow: hidden;
+  display: block;
+  overflow: hidden;
 
-    background: #222;
-    border: 1px solid #000;
-    border-radius: 8px;
+  background: #222;
+  border: 1px solid #000;
+  border-radius: 8px;
+  height: fit-content;
 
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .project img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 
 .project h2 {
-    margin: 20px 20px 5px;
-    font-size: 1.3rem;
+  margin: 20px 20px 5px;
+  font-size: 1.3rem;
 }
 
 .project p {
-    margin: 0 20px 20px;
-    color: #666;
+  margin: 0 20px 20px;
+  color: #666;
 }
 
 .project:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
-
 
 /* =========================
    Contact
    ========================= */
 
 #contact {
-    border-top: 1px solid #ddd;
-    padding-top: 50px;
+  border-top: 1px solid #ddd;
+  padding-top: 50px;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .contact-info a {
-    color: #B0E4CC;
+  color: #b0e4cc;
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* =========================
    Footer
    ========================= */
 
 footer {
-    padding: 30px 0;
-    border-top: 1px solid #ddd;
-    color: #777;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  color: #777;
 }
 
 /* =========================
@@ -205,16 +197,16 @@ footer {
    ========================= */
 
 .cv-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    border-radius: 12px;
-    background: #333;
-    color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #333;
+  color: white;
 }
 
 .cv-button:hover {
-    background: #555;
+  background: #555;
 }
 
 /* =========================
@@ -222,72 +214,66 @@ footer {
    ========================= */
 
 @media (max-width: 700px) {
+  main {
+    padding: 40px 0;
+  }
 
-    main {
-        padding: 40px 0;
-    }
+  section {
+    margin-bottom: 70px;
+  }
 
-    section {
-        margin-bottom: 70px;
-    }
+  .intro h1 {
+    font-size: 2.3rem;
+  }
 
-    .intro h1 {
-        font-size: 2.3rem;
-    }
+  .categories {
+    flex-wrap: wrap;
+  }
 
-    .categories {
-        flex-wrap: wrap;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
    Projets
    ========================= */
 
-.project-page {
-    max-width: 900px;
-    margin: 0 auto;
+.project-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.project-page h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.project-page p {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .project-intro {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 
 .project-image {
-    display: block;
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    margin-bottom: 40px;
+  display: block;
+  width: auto;
+  max-width: 75%;
+  object-fit: contain;
+  margin-bottom: 40px;
 }
 
 .project-info {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0;
-    margin-bottom: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  margin-bottom: 50px;
 }
 
 .project-info p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .project-page h2 {
-    margin-top: 45px;
-}
-
-.project-page > p {
-    max-width: 750px;
+  margin-top: 45px;
 }
